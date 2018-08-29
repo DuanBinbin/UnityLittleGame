@@ -168,9 +168,6 @@ public class TestDisk : MonoBehaviour
             Debug.DrawLine(MeshFilter.mesh.vertices[MeshFilter.mesh.triangles[i + 2]], MeshFilter.mesh.vertices[MeshFilter.mesh.triangles[i]], Color.blue, 100f);
 
             yield return new WaitForSeconds(0.2f);
-
         }
     }
-
-
 }
