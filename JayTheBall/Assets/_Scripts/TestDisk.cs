@@ -10,9 +10,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class TestDisk : MonoBehaviour
@@ -38,7 +35,8 @@ public class TestDisk : MonoBehaviour
     {
         var arcs = new List<float>();
         // 按比例随机，0代表空的，1代表整圆
-        float r = Random.Range(0.1f, 0.9f);
+        float r = 1;
+        Random.Range(0.1f, 0.9f);
         r *= 2 * Mathf.PI;
 
         arcs.Add(0);
